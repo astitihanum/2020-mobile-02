@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Personal_InfoActivity"
+    >
+    <ImageView
+        android:id="@+id/background_satu"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/arrow_left_black"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="7dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:text="Edit"
+        android:textColor="	#AF4040"
+        android:textSize="30sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="348dp"
+        tools:layout_editor_absoluteY="7dp" />
+
+    <TextView
+        android:id="@+id/personal_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:text="Personal Info"
+        android:textColor="	#000000"
+        android:textSize="30sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="55dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/profile_picture"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.167" />
+
+    <ImageView
+        android:id="@+id/edit_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/edit_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.602"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.232" />
+
+    <TextView
+        android:id="@+id/about_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:text="About me"
+        android:textAlignment="center"
+        android:textColor="	#808080"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="19dp" />
+
+    <TextView
+        android:id="@+id/isi_aboutme"
+        android:layout_width="391dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:gravity="start"
+        android:text="I think this is one of the most impoertant qualities to have as a driver: Show responbility for other traffic participants"
+        android:textColor="	#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/about_me"
+        app:layout_constraintTop_toBottomOf="@id/about_me"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/grey1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/grey_line_full"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/isi_aboutme"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/full_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:text="Full Name"
+        android:textAlignment="center"
+        android:textColor="	#808080"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/grey1"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="19dp" />
+
+    <TextView
+        android:id="@+id/isi_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:text="Astiti Hanum"
+        android:textAlignment="center"
+        android:textColor="	#000000"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/grey1"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="297dp" />
+
+    <ImageView
+        android:id="@+id/grey2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/grey_line_full"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/full_name"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:text="Email"
+        android:textAlignment="center"
+        android:textColor="	#808080"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/grey2"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="19dp" />
+
+    <TextView
+        android:id="@+id/isi_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:text="astitihanum99@gmail.com"
+        android:textAlignment="center"
+        android:textColor="	#000000"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/grey2"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="193dp" />
+
+    <ImageView
+        android:id="@+id/grey3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/grey_line_full"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/email"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:text="Gender"
+        android:textAlignment="center"
+        android:textColor="	#808080"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/grey3"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="19dp" />
+
+    <TextView
+        android:id="@+id/isi_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:text="Female"
+        android:textAlignment="center"
+        android:textColor="	#000000"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/grey3"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="339dp" />
+
+    <ImageView
+        android:id="@+id/grey4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/grey_line_full"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gender"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:text="Phone No."
+        android:textAlignment="center"
+        android:textColor="	#808080"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/grey4"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="19dp" />
+
+    <TextView
+        android:id="@+id/isi_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:text="081335213803"
+        android:textAlignment="center"
+        android:textColor="	#000000"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/grey4"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="272dp" />
+
+    <ImageView
+        android:id="@+id/grey5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/grey_line_full"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/phone"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:text="City"
+        android:textAlignment="center"
+        android:textColor="	#808080"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/grey5"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="19dp" />
+
+    <TextView
+        android:id="@+id/isi_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:text="Kediri"
+        android:textAlignment="center"
+        android:textColor="	#000000"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/grey5"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="349dp" />
+
+    <ImageView
+        android:id="@+id/grey6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/grey_line_full"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/city"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:text="Address"
+        android:textAlignment="center"
+        android:textColor="	#808080"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/grey6"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="19dp" />
+
+    <TextView
+        android:id="@+id/isi_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:text="Plemahan, Kediri"
+        android:textAlignment="center"
+        android:textColor="	#000000"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/grey6"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="262dp" />
+
+    <ImageView
+        android:id="@+id/grey7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/grey_line_full"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/address"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>

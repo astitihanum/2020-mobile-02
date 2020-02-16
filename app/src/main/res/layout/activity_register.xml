@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/background_satu"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/arrow_left_black"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="7dp" />
+
+    <TextView
+        android:id="@+id/general_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:text="General Info"
+        android:textColor="	#000000"
+        android:textSize="30sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="60dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:text="1"
+        android:textColor="	#AF4040"
+        android:textSize="30sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="312dp"
+        tools:layout_editor_absoluteY="60dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:text="of 5"
+        android:textColor="	#000000"
+        android:textSize="30sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="329dp"
+        tools:layout_editor_absoluteY="60dp" />
+
+    <ImageView
+        android:id="@+id/grey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/grey_line_full"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="110dp" />
+
+    <TextView
+        android:id="@+id/full_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:text="Full Name"
+        android:textAlignment="center"
+        android:textColor="	#808080"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/grey"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <TextView
+        android:id="@+id/isi_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:text="Astiti Hanum"
+        android:textAlignment="center"
+        android:textColor="	#000000"
+        android:textSize="23sp"
+        app:layout_constraintTop_toBottomOf="@id/full_name"
+        tools:ignore="DuplicateIds,MissingConstraints"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <ImageView
+        android:id="@+id/red1"
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/red_line_padded"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/isi_nama"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:text="Email Address"
+        android:textAlignment="center"
+        android:textColor="	#808080"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/red1"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="33dp" />
+
+    <ImageView
+        android:id="@+id/grey1"
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/grey_line_large"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/email"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/mobile_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:text="Mobile Number"
+        android:textAlignment="center"
+        android:textColor="	#808080"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/grey1"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="33dp" />
+
+    <ImageView
+        android:id="@+id/grey2"
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/grey_line_large"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mobile_number"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:text="Country"
+        android:textAlignment="center"
+        android:textColor="	#808080"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/grey2"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="33dp" />
+
+    <ImageView
+        android:id="@+id/option"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/caret_down"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/grey2"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/grey3"
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/grey_line_large"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/country"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:text="Password"
+        android:textAlignment="center"
+        android:textColor="	#808080"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/grey3"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <ImageView
+        android:id="@+id/grey4"
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/grey_line_large"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pass"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/confirm_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:text="Confirm Password"
+        android:textAlignment="center"
+        android:textColor="	#808080"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/grey4"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <ImageView
+        android:id="@+id/grey5"
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/grey_line_large"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/confirm_pass"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/reveal_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:text="Reveal Code (Optional)"
+        android:textAlignment="center"
+        android:textColor="	#808080"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/grey5"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <ImageView
+        android:id="@+id/grey6"
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/grey_line_large"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reveal_code"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button_user"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/btn_red_medium"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:text="Next"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/grey6"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="32dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

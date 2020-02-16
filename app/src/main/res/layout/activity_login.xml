@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".LoginActivity">
 
     <ImageView
         android:id="@+id/background_satu"
@@ -34,7 +34,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/futura_pt_demibold"
-        android:text="Welcome back"
+        android:text="Continuing as"
         android:textColor="	#000000"
         android:textSize="30sp"
         tools:ignore="MissingConstraints"
@@ -45,57 +45,94 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/futura_pt_demibold"
-        android:text="at largest Services marketplace"
+        android:text="Service Provider"
         android:textColor="	#000000"
-        android:textSize="20sp"
+        android:textSize="30sp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="414dp" />
+        tools:layout_editor_absoluteY="414dp"
+        android:id="@+id/txt_serv"/>
 
-    <TextView
-        android:id="@+id/enter_as"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="110dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_white_small"
         android:fontFamily="@font/futura_pt_demibold"
-        android:text="Enter as a"
-        android:textColor="	#808080"
-        android:textSize="20sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="481dp" />
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="#AF4040"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_serv"
+        tools:ignore="DuplicateIds,InvalidId,MissingConstraints"
+        tools:layout_editor_absoluteX="34dp" />
 
     <Button
         android:id="@+id/button_user"
-        android:layout_width="match_parent"
+        android:layout_width="230dp"
         android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/button_login"
         android:background="@drawable/btn_red_medium"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="200dp"
-        android:layout_marginTop="10dp"
         android:fontFamily="@font/futura_pt_demibold"
-        android:text="user"
+        android:text="Register"
+        android:textAllCaps="false"
         android:textColor="#FFFFFF"
-        android:textSize="15sp"
-        app:layout_constraintTop_toBottomOf="@id/enter_as"
-        tools:layout_editor_absoluteX="61dp"
-        tools:ignore="InvalidId" />
+        android:textSize="20dp"
+        tools:ignore="InvalidId,MissingConstraints"
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="469dp" />
 
     <Button
-        android:id="@id/button_sp"
-        android:layout_width="match_parent"
+        android:id="@+id/google"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="200dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/button_login"
         android:background="@drawable/btn_white_large"
+        android:text="Continue with Google"
+        android:textAllCaps="false"
         android:fontFamily="@font/futura_pt_demibold"
-        android:text="service provider"
+        android:textSize="20dp"
         android:textColor="#AF4040"
-        android:textSize="15sp"
-        app:layout_constraintTop_toBottomOf="@id/button_user"
-        tools:layout_editor_absoluteX="61dp" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="34dp" />
+
+    <ImageView
+        android:id="@+id/ggl"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/google_logo"
+        app:layout_constraintTop_toBottomOf="@id/button_login"
+        tools:ignore="DuplicateIds,MissingConstraints"
+        tools:layout_editor_absoluteX="49dp" />
+
+    <Button
+        android:id="@+id/facebook"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/google"
+        android:background="@drawable/btn_blue_large"
+        android:text="Continue with Facebook"
+        android:textAllCaps="false"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:textSize="20dp"
+        android:textColor="#191970"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="34dp" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="32dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/fb_logo"
+        app:layout_constraintTop_toBottomOf="@id/ggl"
+        tools:ignore="DuplicateIds,MissingConstraints"
+        tools:layout_editor_absoluteX="49dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -106,8 +143,7 @@
         android:textAlignment="center"
         android:textColor="	#808080"
         android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@id/button_sp"
+        app:layout_constraintTop_toBottomOf="@id/facebook"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="138dp" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
